@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
 
 string titolo = "Clean code. Guida per diventare bravi artigiani nello sviluppo agile di software";
 string autore = "Robert C. Martin";
@@ -13,7 +13,25 @@ int numeroRecensioni = 119;
 float valutazioneMedia = 4.5f;
 bool isKindle = true;
 bool isFlessible = true;
+string kindle = "" ;
+string flessible = "";
+         
 
+if (isKindle)
+{
+    kindle = "Sì";
+} else
+{
+    kindle = "No";
+}
+
+if (isFlessible)
+{
+    flessible = "Sì";
+} else
+{
+    flessible = "No";
+}
 
 
 Console.WriteLine("IL LIBRO DI OGGI: " + titolo + " di " + autore);
@@ -27,5 +45,5 @@ Console.WriteLine("Dimensione del libro: " + larghezza + " cm X " + lunghezza + 
 Console.WriteLine("Informazione Amazon:");
 Console.WriteLine("Numero di recensioni: " + numeroRecensioni + " recensioni");
 Console.WriteLine("Valutazione media: " + valutazioneMedia + " stelline");
-Console.WriteLine("Kindle disponibile: " + isKindle);
-Console.WriteLine("Copertina flessibile disponibile: " + isFlessible);
+Console.WriteLine("Kindle disponibile: " + kindle);
+Console.WriteLine("Copertina flessibile disponibile: " + flessible);
